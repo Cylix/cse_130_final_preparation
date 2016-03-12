@@ -1,2 +1,3 @@
-# cse_130_final_preparation
-preparation for ucsd cse130
+# UCSD CSE 130 Final Preparation
+
+My work on previous years finals.
