@@ -12,8 +12,7 @@ sort_(L1,L2) :- permutation(L1,L2), sorted(L2), !.
 % 4c
 split([],[],[]).
 split([X],[X],[]).
-% Not sure: in the subject, there is no blank space inside "[X|T]", but I don't see another way to do it
-split([X,Y|T], [X|T_EVEN], [Y|T_ODD]) :- split(T,T_EVEN,T_ODD).
+split([X|T], [X|Xs], [Y|Ys]) :- split(T, [Y|Ys], Xs).
 
 % 4d
 merge([],L,L).
